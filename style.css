@@ -1,0 +1,318 @@
+:root{
+    --azulDnc: #0C07F2;
+    --pretoDnc: #303030;
+    --cinzaDnc: #C9C9C9;
+    --fontePadrao: 'Inter';
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
+}
+
+/*menu de navegação principal*/
+#principal {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: var(--pretoDnc);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+
+    #menu {
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    #principal div a{
+        font-family:var(--fontePadrao) ;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+        #principal div a:hover {
+            color: var(--cinzaDnc);
+        }
+
+    #principal button {
+        background: var(--azulDnc);
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        font-family: var(--fontePadrao);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-right: 5%;
+        border: 0px;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+/*Seção Principal do site*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+header{
+    color: white;
+    font-family: var(--fontePadrao);
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 97px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+header .invert {
+    background-color: black;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+/* Formulário */
+
+form{
+    font-family: var(--fontePadrao);
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input{
+    background: rgba(255, 255, 255, 0.9);
+    border: 0px;   
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    padding: 15px;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+form label {
+    margin: 10px 0px 10px 0px;
+}
+
+form input ::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.checkboxItens label{
+    font-size: 25px;
+}
+
+.checkboxItens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.7);
+}
+
+input[type="submit"]{
+    background: rgba(12, 112, 242, 0.9);
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-top: 100px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+[value="Cadastrar"] {
+    align-items: center;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(12, 112, 242);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer nav  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: var(--fontePadrao);
+    background-color: var(--pretoDnc);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fontePadrao);
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer ul li a:hover {
+    color: var(--cinzaDnc);
+}
+
+footer .endereco {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fontePadrao);
+    color: white;
+    text-align: center;
+    width: 25%;
+}
+
+footer .linha2 {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+footer .linha2 a{
+    font-family: var(--fontePadrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:first-child {
+    border-right: 3px solid white;
+}
+
+footer .linha2 a:hover {
+    color: var(--cinzaDnc);
+}
+
+@media only screen and (max-width: 600px) {
+                 /* Menu */
+    #principal{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a{
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    #principal button {
+        width: 100%;
+        margin-right: 0px; 
+    }
+    
+            /* Section */
+    
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 20px; 
+    }
+
+    .checkboxItens label {
+        font-size: 17px;
+    }
+
+    /* FOOTER */
+    
+    footer .linha1 {
+        flex-direction:column;
+    }
+
+    footer .endereco {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+}
